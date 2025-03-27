@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegIt</title>
+    <style>
+        html,body{
+            height: 100%;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center; 
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url('bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0px;
+        }
+ 
+        header{
+            background-color: rgba(136, 201, 107, 0.5);
+            width: 100%;
+            padding-left: 150px;
+            color: white;
+            display: flex;
+            align-items:  center;
+        }
+        header nav {
+            display: flex;
+            margin-left: auto;
+            padding-right: 150px;
+            gap: 100px; 
+        }
+
+        header a {
+            color: white; 
+            text-decoration: none; 
+            font-weight: bold; 
+            font-size: 18px;
+        
+        }
+
+        header a:hover {
+            text-decoration: underline; 
+        }
+        table {
+            width: 100%;
+        }
+
+        .form {
+            width: 800px;
+            margin: 100px auto;
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+        }
+        
+
+        input[type="text"] {
+            width: 380px;
+            height: 28px;
+            margin-bottom: 20px;
+        }
+
+        input[type="date"] {
+            width: 380px;
+            height: 28px;
+        }
+
+        #submit {
+            margin-top: 20px;
+            background-color: #348434;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            width: 380px;
+            height: 40px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        #cancel {
+            margin-left: 15px;
+            background-color: white;
+            color: #da6856;
+            border: 2px solid #da6856;
+            border-radius: 10px;
+            width: 380px;
+            height: 40px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        #second {
+            background-color: #f8d9d4;
+            width: 1470px;
+            border: 1px solid #000;
+            margin-left: 33px;
+            height: 40px;
+        }
+
+        #second th {
+            border-right: 1px solid #000; 
+        }
+        #second th:last-child {
+            border-right: none;
+        }
+
+        #second tr {
+            height: 40px; 
+        }
+
+        .new-row {
+            background-color: white;
+        }
+
+        footer{
+            background-color: rgba(136, 201, 107, 0.1);
+            width: 100%;
+            margin-top: auto;
+            text-align: center;
+            font-weight: bold;
+            font-size: 20px;
+            color: white;
+            padding: 10px;
+
+        }
+    </style>
+</head>
+<body>
+
+    
+    <header>
+        <h1>RegIt</h1>
+    <img src="logo.png" alt="Logo" style="height: 50px; margin-left: 25px;">
+    <nav>
+        <a href="index.html">Login</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+    </header>
+
+
+    
+    <div class="form">
+        <h2>Attendee Registration Form</h2>
+        <form id="form"action="#" method="post">
+            <table>
+                <tr>
+                    <td>First Name:</td>
+                    <td>Last Name:</td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="firstname"></td>
+                    <td><input type="text" name="lastname"></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td>Password:</td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="firstname"></td>
+                    <td><input type="text" name="lastname"></td>
+                </tr>
+                <tr>
+                    <td class="radio-label">Gender:</td>
+                    <td>User Type:</td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="gender" value="male" > Male
+                        <input type="radio" name="gender" value="female" style="margin-left: 40px;"> Female</td>
+                    <td><input type="radio" name="usertype" value="admin"> Admin
+                        <input type="radio" name="usertype" value="student" style="margin-left: 40px;"> Student</td>
+                </tr>
+            </table>
+            <br>
+            <button type="button" id="submit">SUBMIT</button>
+            <button type="button" id="cancel">CANCEL</button>
+        </form>
+    </div>
+
+
+    <footer>
+        <p>Jervin Ryle I. Milleza | BSCS - 2</p>
+    </footer>
+
+</body>
+</html>
